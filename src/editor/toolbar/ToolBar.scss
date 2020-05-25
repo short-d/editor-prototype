@@ -1,0 +1,28 @@
+$height: 44px;
+$bottom-color: #262625;
+$triangle-height: 8px;
+
+.Toolbar {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  height: $height;
+  transition: all 200ms ease-in-out;
+  transform: translateX(-50%) translateY(-($height+$triangle-height));
+  border-radius: 6px;
+  background-image: linear-gradient(to bottom, rgba(49, 49, 47, .99), $bottom-color);
+
+  &.shown {
+    display: block;
+  }
+
+  .triangle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY($triangle-height);
+    border-top: $triangle-height solid $bottom-color;
+    border-right: $triangle-height solid transparent;
+    border-left: $triangle-height solid transparent;
+  }
+}

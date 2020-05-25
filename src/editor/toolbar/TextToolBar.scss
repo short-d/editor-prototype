@@ -1,0 +1,20 @@
+.icon-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  fill: white;
+
+  .icon-button {
+    margin: 0 6px;
+    cursor: pointer;
+  }
+
+  .enabled {
+    fill: #34e79a;
+  }
+
+  .unavailable {
+    fill: #606060;
+  }
+}
