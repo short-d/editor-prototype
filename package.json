@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "immutable": "^4.0.0-rc.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -15,14 +16,17 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "node-sass": "^4.14.1",
-    "typescript": "~3.7.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier:check": "yarn prettier:base --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "yarn prettier:base --write \"src/**/*.{ts,tsx}\"",
+    "stylelint:write": "yarn stylelint --config=.stylelintrc --fix src/**/*.{scss,css}"
   },
   "eslintConfig": {
     "extends": "react-app"

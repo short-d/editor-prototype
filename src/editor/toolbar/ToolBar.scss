@@ -3,7 +3,7 @@ $bottom-color: #262625;
 $triangle-height: 8px;
 
 .Toolbar {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   display: none;
   height: $height;
